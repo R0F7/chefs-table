@@ -1,4 +1,4 @@
-// import { GoSearch } from "react-icons/go";  <GoSearch />
+import { GoSearch } from "react-icons/go";  
 
 const Header = () => {
     return (
@@ -16,8 +16,9 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="flex-none gap-4">
-                    <div className="form-control">
-                        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                    <div className="form-control relative">
+                        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto placeholder:pl-5 " />
+                        <span className="absolute top-4 left-4"><GoSearch className="text-[17px]" /></span>
                     </div>
                     <div className="bg-[#0BE58A] rounded-full p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
