@@ -1,11 +1,26 @@
+import { useState } from "react";
 import CardDetail from "./CardDetail";
 import Cards from "./Cards";
 
 const Container = () => {
+    const [cards, setCards] = useState([]);
+    const [cook, setCook] = useState([]);
 
-    const handleWantToCook = () => {
-        console.log('cook');
+    const handleWantToCook = (item) => {
+        const isExist = cards.find((card) => card.recipe_id == item.recipe_id);
+        if (!isExist) {
+            setCards([...cards, item]);
+        }else{
+            alert('already added');
+        }
     }
+    // console.log(cards);
+
+    const handleCurrentlyCooking = () => {
+        setCook([...cards]);
+        setCards([]);
+    }
+    // console.log(cook);
 
     return (
         <div >
@@ -18,7 +33,11 @@ const Container = () => {
                 <Cards
                 handleWantToCook = {handleWantToCook}
                 ></Cards>
-                <CardDetail></CardDetail>
+                <CardDetail
+                cards = {cards}
+                handleCurrentlyCooking = {handleCurrentlyCooking}
+                cook = {cook}
+                ></CardDetail>
             </div>
 
         </div>

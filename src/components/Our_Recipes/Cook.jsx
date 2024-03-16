@@ -1,15 +1,12 @@
-import PropTypes from 'prop-types'
-import Cook from './Cook';
+import PropTypes from 'prop-types';
 
-const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
-    // console.log(cards);
+const Cook = ({cook}) => {
+    // console.log(cook);
 
     return (
-        <div className="w-1/3 border border-[rgba(40,40,40,0.20)] rounded-2xl ml-6">
-
-            <div>
+         <div>
                 <div className="text-center mb-6">
-                    <h4 className="text-[#282828]  text-2xl font-semibold mt-8 pb-4 border-b border-[rgba(40,40,40,0.15)] inline-block px-14">Want to cook: {cards.length}</h4>
+                    <h4 className="text-[#282828]  text-2xl font-semibold mt-8 pb-4 border-b border-[rgba(40,40,40,0.15)] inline-block px-14">Currently cooking: {cook.length}</h4>
                 </div>
 
                 <div className=''>
@@ -27,13 +24,13 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
                             <tbody>
 
                                 {
-                                    cards.map((card, idx) => (
+                                    cook.map((card, idx) => (
                                         <tr key={idx} className="bg-base-200 border-b-2 border-[white]">
                                             <th>{idx + 1}</th>
                                             <td>{card.recipe_name}</td>
                                             <td>{card.preparing_time}</td>
                                             <td>{card.calories}</td>
-                                            <td><button onClick={handleCurrentlyCooking} className="text-[#150B2B] font-medium text-base bg-[#0BE58A] px-[18px] rounded-[50px] py-1">Preparing</button></td>
+                                            
                                         </tr>
                                     ))
                                 }
@@ -42,23 +39,12 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
                         </table>
                     </div>
                 </div>
-
-
-            </div>
-
-            <div>
-                <Cook
-                cook = {cook}
-                ></Cook>
-            </div>
-        </div>
+            </div> 
     );
 };
 
-CardDetail.propTypes = {
-    cards: PropTypes.array,
-    handleCurrentlyCooking: PropTypes.func,
-    cook: PropTypes.any
+Cook.propTypes = {
+    cook: PropTypes.array,
 }
 
-export default CardDetail;
+export default Cook;

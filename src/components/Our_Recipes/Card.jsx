@@ -29,7 +29,7 @@ const Card = ({ card, handleWantToCook }) => {
                         <div className='flex gap-x-2 text-[rgba(40,40,40,0.80)] text-base font-normal items-center'><AiOutlineFire className='text-xl text-black' /> {calories}</div>
                     </div>
                     <div className="card-actions">
-                        <button onClick={()=> handleWantToCook()} className="rounded-[50px] bg-[#0BE58A] py-3 px-6 text-[#150B2B] text-lg font-medium">Want to Cook</button>
+                        <button onClick={()=> handleWantToCook(card)} className="rounded-[50px] bg-[#0BE58A] py-3 px-6 text-[#150B2B] text-lg font-medium">Want to Cook</button>
                     </div>
                 </div>
             </div>
