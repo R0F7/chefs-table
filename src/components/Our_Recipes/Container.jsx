@@ -7,23 +7,31 @@ import 'react-toastify/dist/ReactToastify.css';
 const Container = () => {
     const [cards, setCards] = useState([]);
     const [cook, setCook] = useState([]);
-    const notify = () => toast("all ready added!");
+    const [time, setTime] = useState(0)
+    const [calories, setCalories] = useState(0);
+
+    const notify = () => toast("Already Exist!");
 
     const handleWantToCook = (item) => {
         const isExist = cards.find((card) => card.recipe_id == item.recipe_id);
         if (!isExist) {
             setCards([...cards, item]);
-        }else{
+        } else {
             notify();
         }
     }
     // console.log(cards);
 
-    const handleCurrentlyCooking = () => {
-        // setCook([...cards]);
-        // setCards([]);
+    const handleCurrentlyCooking = (item) => {
+        const newCart = cards.filter((card) => card !== item);
+        const newCook = cards.find((card) => card == item);
+        setCards(newCart);
+        setCook([...cook, newCook]);
+        // setCalories()
+        setCalories(parseFloat(newCook.calories) + calories);
+        setTime(parseFloat(newCook.preparing_time) + time);
     }
-    // console.log(cook);
+    // console.log(calories);
 
     return (
         <div >
@@ -34,12 +42,14 @@ const Container = () => {
 
             <div className="flex mb-[100px]">
                 <Cards
-                handleWantToCook = {handleWantToCook}
+                    handleWantToCook={handleWantToCook}
                 ></Cards>
                 <CardDetail
-                cards = {cards}
-                handleCurrentlyCooking = {handleCurrentlyCooking}
-                cook = {cook}
+                    cards={cards}
+                    handleCurrentlyCooking={handleCurrentlyCooking}
+                    cook={cook}
+                    time = {time}
+                    calories = {calories}
                 ></CardDetail>
             </div>
             <ToastContainer />

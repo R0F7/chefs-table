@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 import Cook from './Cook';
+import Calculation from './calculation';
 
-const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
+const CardDetail = ({ cards, handleCurrentlyCooking, cook, calories, time }) => {
     // console.log(cards);
 
     return (
@@ -33,7 +34,7 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
                                             <td>{card.recipe_name}</td>
                                             <td>{card.preparing_time}</td>
                                             <td>{card.calories}</td>
-                                            <td><button onClick={handleCurrentlyCooking} className="text-[#150B2B] font-medium text-base bg-[#0BE58A] px-[18px] rounded-[50px] py-1">Preparing</button></td>
+                                            <td><button onClick={()=>handleCurrentlyCooking(card)} className="text-[#150B2B] font-medium text-base bg-[#0BE58A] px-[18px] rounded-[50px] py-1">Preparing</button></td>
                                         </tr>
                                     ))
                                 }
@@ -51,6 +52,14 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
                 cook = {cook}
                 ></Cook>
             </div>
+
+            <div>
+                <Calculation
+                time = {time}
+                calories = {calories}
+                ></Calculation>
+            </div>
+            
         </div>
     );
 };
@@ -58,7 +67,9 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook }) => {
 CardDetail.propTypes = {
     cards: PropTypes.array,
     handleCurrentlyCooking: PropTypes.func,
-    cook: PropTypes.any
+    cook: PropTypes.any,
+    time: PropTypes.number,
+    calories: PropTypes.number,
 }
 
 export default CardDetail;
