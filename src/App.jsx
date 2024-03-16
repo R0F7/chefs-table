@@ -5,7 +5,7 @@ import Container from './components/Our_Recipes/Container'
 import Slider from './components/Slider/Slider'
 
 function App() {
-
+  
   return (
     <>
       <div className='container mx-auto'>
@@ -13,8 +13,12 @@ function App() {
         <Slider></Slider>
         <Container></Container>
       </div>
+      <div>
+      </div>
     </>
   )
 }
 
 export default App
+
+

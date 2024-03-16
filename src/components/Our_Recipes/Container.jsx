@@ -1,24 +1,27 @@
 import { useState } from "react";
 import CardDetail from "./CardDetail";
 import Cards from "./Cards";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Container = () => {
     const [cards, setCards] = useState([]);
     const [cook, setCook] = useState([]);
+    const notify = () => toast("all ready added!");
 
     const handleWantToCook = (item) => {
         const isExist = cards.find((card) => card.recipe_id == item.recipe_id);
         if (!isExist) {
             setCards([...cards, item]);
         }else{
-            alert('already added');
+            notify();
         }
     }
     // console.log(cards);
 
     const handleCurrentlyCooking = () => {
-        setCook([...cards]);
-        setCards([]);
+        // setCook([...cards]);
+        // setCards([]);
     }
     // console.log(cook);
 
@@ -39,6 +42,7 @@ const Container = () => {
                 cook = {cook}
                 ></CardDetail>
             </div>
+            <ToastContainer />
 
         </div>
     );
