@@ -1,0 +1,171 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Lemon Garlic Shrimp Pasta",
+        "recipe_image": "https://i.ibb.co/3YgFX37/Lemon-Garlic-Shrimp-Pasta.jpg",
+        "short_description": "A delicious pasta dish with succulent shrimp tossed in a zesty lemon garlic sauce.",
+        "ingredients": [
+            "300g spaghetti",
+            "300g large shrimp, peeled and deveined",
+            "2 tbsp olive oil",
+            "1 lemon, juiced and zested",
+            "1/4 cup chopped parsley",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "25 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Mango Chicken Curry",
+        "recipe_image": "https://i.ibb.co/BTVLdF0/Mango-Chicken-Curry.jpg",
+        "short_description": "A flavorful curry with tender chicken and sweet mango chunks in a creamy coconut sauce.",
+        "ingredients": [
+            "500g chicken breast, diced",
+            "2 ripe mangoes, peeled and diced",
+            "1 onion, chopped",
+            "3 cloves garlic, minced",
+            "1 can (400ml) coconut milk",
+            "2 tbsp curry powder"
+        ],
+        "preparing_time": "40 min",
+        "calories": "400 calories"
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Quinoa Salad with Roasted Vegetables",
+        "recipe_image": "https://i.ibb.co/HTnVTK9/Quinoa-Salad-with-Roasted-Vegetables.jpg",
+        "short_description": "A nutritious salad featuring roasted vegetables, quinoa, and a tangy vinaigrette dressing.",
+        "ingredients": [
+            "1 cup quinoa, cooked",
+            "2 cups mixed vegetables",
+            "1/4 cup feta cheese, crumbled",
+            "2 tbsp olive oil",
+            "2 tbsp balsamic vinegar",
+            "1 tbsp honey"
+        ],
+        "preparing_time": "30 min",
+        "calories": "280 calories"
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Beef Stir-Fry with Broccoli",
+        "recipe_image": "https://i.ibb.co/YbTHVsT/Beef-Stir-Fry-with-Broccoli.jpg",
+        "short_description": "A quick and easy stir-fry dish featuring tender beef slices and crisp broccoli florets.",
+        "ingredients": [
+            "500g beef sirloin, thinly sliced",
+            "3 cups broccoli florets",
+            "1 onion, sliced",
+            "2 cloves garlic, minced",
+            "3 tbsp soy sauce",
+            "1 tbsp sesame oil"
+        ],
+        "preparing_time": "20 min",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Vegetable Lasagna",
+        "recipe_image": "https://i.ibb.co/9spjB4N/Vegetable-Lasagna.jpg",
+        "short_description": "A hearty vegetarian lasagna layered with marinara sauce, vegetables, and creamy ricotta cheese.",
+        "ingredients": [
+            "9 lasagna noodles, cooked",
+            "2 cups marinara sauce",
+            "1 cup ricotta cheese",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "45 min",
+        "calories": "380 calories"
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Teriyaki Salmon Bowl",
+        "recipe_image": "https://i.ibb.co/xSX2KL5/Teriyaki-Salmon-Bowl.jpg",
+        "short_description": "A flavorful bowl featuring grilled teriyaki salmon, steamed rice, and fresh vegetables.",
+        "ingredients": [
+            "4 salmon fillets",
+            "1/2 cup teriyaki sauce",
+            "2 cups cooked rice",
+            "1 tbsp sesame seeds",
+            "1 tbsp vegetable oil",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "30 min",
+        "calories": "420 calories"
+    },
+    {
+        "recipe_id": 7,
+        "recipe_name": "Spinach and Feta Stuffed Chicken Breast",
+        "recipe_image": "https://i.ibb.co/vzpBhgs/Spinach-and-Feta-Stuffed-Chicken-Breast.jpg",
+        "short_description": "Tender chicken breasts stuffed with spinach, feta cheese, and aromatic herbs.",
+        "ingredients": [
+            "4 boneless, skinless chicken breasts",
+            "2 cups fresh spinach leaves",
+            "1/2 cup crumbled feta cheese",
+            "2 cloves garlic, minced",
+            "1 tbsp olive oil",
+            "1 tsp dried oregano"
+        ],
+        "preparing_time": "35 min",
+        "calories": "300 calories"
+    },
+    {
+        "recipe_id": 8,
+        "recipe_name": "Greek Salad",
+        "recipe_image": "https://i.ibb.co/3NnYyTm/Greek-Salad.jpg",
+        "short_description": "A refreshing salad with crisp cucumbers, juicy tomatoes, tangy olives, and creamy feta cheese.",
+        "ingredients": [
+            "2 large cucumbers, diced",
+            "3 large tomatoes, diced",
+            "1/2 cup Kalamata olives, pitted",
+            "2 tbsp red wine vinegar",
+            "1 tsp dried oregano",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "15 min",
+        "calories": "200 calories"
+    },
+    {
+        "recipe_id": 9,
+        "recipe_name": "Vegetarian Chili",
+        "recipe_image": "https://i.ibb.co/Lhx95xY/Vegetarian-Chili.jpg",
+        "short_description": "A hearty and satisfying chili made with beans, vegetables, and a blend of spices.",
+        "ingredients": [
+            "1 cup corn kernels",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "2 tbsp chili powder",
+            "1 tbsp cumin",
+            "2 cups vegetable broth"
+        ],
+        "preparing_time": "40 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_id": 10,
+        "recipe_name": "Caprese Salad",
+        "recipe_image": "https://i.ibb.co/mXLL0Fh/Caprese-Salad.jpg",
+        "short_description": "A simple and refreshing salad with ripe tomatoes, fresh mozzarella, and fragrant basil leaves.",
+        "ingredients": [
+            "4 ripe tomatoes, sliced",
+            "1 ball fresh mozzarella cheese, sliced",
+            "1/4 cup fresh basil leaves",
+            "2 tbsp balsamic glaze",
+            "2 tbsp extra virgin olive oil",
+            "Salt and pepper to taste"
+        ],
+        "preparing_time": "10 min",
+        "calories": "250 calories"
+    }
+]
+
+
+
+
+
+
+
+
+
