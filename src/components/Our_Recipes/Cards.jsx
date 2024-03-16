@@ -7,7 +7,7 @@ const Cards = ({handleWantToCook}) => {
     const [cards, setCards] = useState([]);
 
     useEffect(()=>{
-        fetch('../../../public/fakeData.json')
+        fetch('./fakeData.json')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
