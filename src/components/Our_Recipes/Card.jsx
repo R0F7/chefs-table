@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { CiClock2 } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
 
-const Card = ({ card }) => {
+const Card = ({ card, handleWantToCook }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = card;
     // console.log(parseFloat(calories));
     // console.log(card);
@@ -29,7 +29,7 @@ const Card = ({ card }) => {
                         <div className='flex gap-x-2 text-[rgba(40,40,40,0.80)] text-base font-normal items-center'><AiOutlineFire className='text-xl text-black' /> {calories}</div>
                     </div>
                     <div className="card-actions">
-                        <button className="rounded-[50px] bg-[#0BE58A] py-3 px-6 text-[#150B2B] text-lg font-medium">Want to Cook</button>
+                        <button onClick={()=> handleWantToCook()} className="rounded-[50px] bg-[#0BE58A] py-3 px-6 text-[#150B2B] text-lg font-medium">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -39,6 +39,7 @@ const Card = ({ card }) => {
 
 Card.propTypes = {
     card: PropTypes.object,
+    handleWantToCook: PropTypes.func,
 }
 
 

@@ -3,6 +3,10 @@ import Cards from "./Cards";
 
 const Container = () => {
 
+    const handleWantToCook = () => {
+        console.log('cook');
+    }
+
     return (
         <div >
             <div className="text-center">
@@ -11,7 +15,9 @@ const Container = () => {
             </div>
 
             <div className="flex mb-[100px]">
-                <Cards></Cards>
+                <Cards
+                handleWantToCook = {handleWantToCook}
+                ></Cards>
                 <CardDetail></CardDetail>
             </div>
 
