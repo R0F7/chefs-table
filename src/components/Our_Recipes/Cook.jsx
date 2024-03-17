@@ -5,8 +5,8 @@ const Cook = ({cook}) => {
 
     return (
          <div>
-                <div className="text-center mb-6">
-                    <h4 className="text-[#282828]  text-2xl font-semibold mt-8 pb-4 border-b border-[rgba(40,40,40,0.15)] inline-block px-14">Currently cooking: {cook.length}</h4>
+                <div className="text-center lg:mb-6">
+                    <h4 className="text-[#282828] text-xl lg:text-2xl font-semibold mt-4 lg:mt-8 pb-4 border-b border-[rgba(40,40,40,0.15)] inline-block px-14">Currently cooking: {cook.length}</h4>
                 </div>
 
                 <div className=''>

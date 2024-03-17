@@ -9,8 +9,8 @@ const Card = ({ card, handleWantToCook }) => {
 
     return (
         <div>
-            <div className="card card-compact bg-base-100 border border-[rgba(40,40,40,0.20)] p-6">
-                <div className=' h-[270px]'><img className='rounded-2xl mb-6 w-full h-full' src={recipe_image} alt={recipe_name} /></div>
+            <div className="card card-compact border border-[rgba(40,40,40,0.20)] p-6">
+                <div className='h-[270px]'><img className='rounded-2xl mb-6 w-full h-full' src={recipe_image} alt={recipe_name} /></div>
                 <div className="mt-6">
                     <h2 className="card-title mb-4 text-[#282828] text-xl font-semibold">{recipe_name}</h2>
                     <p className='text-[#878787] font-normal text-base mb-4'>{short_description}</p>
