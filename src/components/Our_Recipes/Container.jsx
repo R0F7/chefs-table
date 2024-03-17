@@ -40,7 +40,7 @@ const Container = () => {
                 <p className="text-[rgba(21,11,43,0.60)] text-sm lg:text-base font-normal lg:w-[55%] mx-auto mb-8 lg:mb-12">Discover mouthwatering recipes for every craving. From savory delights to sweet treats, explore our diverse collection of culinary creations. </p>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row mb-[100px]">
+            <div className="flex flex-col-reverse lg:flex-row mb-8 lg:mb-[100px]">
                 <Cards
                     handleWantToCook={handleWantToCook}
                 ></Cards>

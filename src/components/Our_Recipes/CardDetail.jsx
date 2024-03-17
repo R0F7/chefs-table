@@ -34,7 +34,7 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook, calories, time }) => 
                                             <td>{card.recipe_name}</td>
                                             <td>{card.preparing_time}</td>
                                             <td>{card.calories}</td>
-                                            <td><button onClick={()=>handleCurrentlyCooking(card)} className="text-[#150B2B] font-medium text-sm lg:text-base bg-[#0BE58A] px-3.5 lg:px-[18px] rounded-[50px] py-1">Preparing</button></td>
+                                            <td><button onClick={()=>handleCurrentlyCooking(card)} className="text-[#150B2B] font-medium text-sm lg:text-base bg-[#35f3a3] px-3.5 lg:px-[18px] rounded-[50px] py-1">Preparing</button></td>
                                         </tr>
                                     ))
                                 }
