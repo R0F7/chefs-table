@@ -6,7 +6,7 @@ const CardDetail = ({ cards, handleCurrentlyCooking, cook, calories, time }) => 
     // console.log(cards);
 
     return (
-        <div className="w-1/3 border border-[rgba(40,40,40,0.20)] rounded-2xl ml-6">
+        <div className="lg:w-1/3 border border-[rgba(40,40,40,0.20)] rounded-2xl lg:ml-6 mb-5 lg:mb-0">
 
             <div>
                 <div className="text-center mb-6">

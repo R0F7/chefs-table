@@ -14,7 +14,7 @@ const Cards = ({handleWantToCook}) => {
     // console.log(cards);
 
     return (
-        <div className="w-2/3 grid grid-cols-2 gap-10">
+        <div className="lg:w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
             {/* <h4 className="text-4xl">cart</h4> */}
             {
                 cards.map((card) => <Card
